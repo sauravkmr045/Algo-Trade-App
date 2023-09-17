@@ -231,6 +231,7 @@ async def dataupload(symbol:str):
             
     return "data added successfully"
 
+import talib
 
 @trading.get('/get_banknifty_data/}')
 async def get_banknifty_data():
@@ -244,8 +245,9 @@ async def get_banknifty_data():
     
     with SessionLocal() as session:
         items = session.query(Banknifty).all()
-
-        return items
+        items = list(items)
+        close_price = [i.close_price for i in items]
+        return close_price
 
 
 

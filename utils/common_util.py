@@ -1,6 +1,15 @@
 import time
-from utils.kite_trade import KiteApp
-from env import enctoken
+try:
+    from utils.kite_trade import KiteApp
+    from env import enctoken
+    from config.db import SessionLocal
+    from models.models import *
+except Exception as e:
+    from kite_trade import KiteApp
+    
+    
+
+
 
 # enctoken = "xHM+jxac3jC5T4yOcWCr2OSKHTHmAITCFi2/pZCRlAy3KUY2k7cifqRQ/ahS6L3WXI+m4Ii9m2vvayjJIUePvLiaJd7Ew3mqtmqS+D7AELIbsQwrTyccaw=="
 
@@ -45,5 +54,4 @@ def tradingsymbol_maker(symbol="NSE:NIFTY BANK" ,strike_price=0):
 
 
 
-    
 
