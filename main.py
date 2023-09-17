@@ -8,4 +8,6 @@ app = FastAPI()
 app.include_router(trading)
 
 
+
+
 Base.metadata.create_all(bind=engine)

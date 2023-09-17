@@ -1,0 +1,2 @@
+enctoken="xHM+jxac3jC5T4yOcWCr2OSKHTHmAITCFi2/pZCRlAy3KUY2k7cifqRQ/ahS6L3WXI+m4Ii9m2vvayjJIUePvLiaJd7Ew3mqtmqS+D7AELIbsQwrTyccaw=="
+DATABASE_URL = "mysql+mysqldb://root:12345678@localhost:3306/trading"
